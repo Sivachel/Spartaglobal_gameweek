@@ -164,7 +164,6 @@ function startGame() {
     console.log(turn);
   }
 }
-
 animateWhole = requestAnimationFrame(repeat);
 function repeat() {
     if (collision(car,car_1) || collision(car,car_2) || collision(car,car_3) ||  collision(car,car_4)){
@@ -212,24 +211,24 @@ function stop_game() {
   cancelAnimationFrame(move_right);
   if (turn == 0) {
     turn++;
-    var score_counter = 0;
+    var score_counter = 1;
     restart_div.slideDown();
     restart_btn.focus();
     player2turndiv.slideDown();
   } else if (turn == 1) {
-    restart_div.slideDown();
-    restart_btn.focus();
-    if (parseInt(player1score.text()) > parseInt(player2score.text())) {
+      restart_div.slideDown();
+      restart_btn.focus();
+      if (parseInt(player1score.text()) > parseInt(player2score.text())) {
       yourscore.text("Player 1 wins")
-  }else if (parseInt(player1score.text()) < parseInt(player2score.text())) {
+    }else if (parseInt(player1score.text()) < parseInt(player2score.text())) {
      yourscore.text("player 2 wins")
-  } else if (parseInt(player1score.text()) == parseInt(player2score.text())) {
-    yourscore.text("no one wins")
-  }
+    } else if (parseInt(player1score.text()) == parseInt(player2score.text())) {
+      yourscore.text("no one wins")
+    }
   }
 }
 
-//collision function - when two divs collide
+//collision function - when two divs collide (fucntion to detect when two cars come in contact with each other)
 function collision($div1, $div2) {
   var x1 = $div1.offset().left;
   var y1 = $div1.offset().top;

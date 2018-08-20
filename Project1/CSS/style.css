@@ -4,7 +4,16 @@
   width:1140px;
   margin: auto;
 }
+.player1score{
+  font-family: 'Permanent Marker', cursive;
+}
+.player2score{
+  font-family: 'Permanent Marker', cursive;
+}
 
+.yourscore{
+  font-family: 'Permanent Marker', cursive;
+}
 .container {
   background-color: black;
   height: 800px;
