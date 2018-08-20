@@ -1,0 +1,55 @@
+.bigContainer {
+  height: 800px;
+  width:1140px;
+  margin: auto;
+  position: relative;
+}
+
+.topSection {
+  background-image: url('../Images/needforspeedimg.jpg');
+  background-size: cover;
+  height: 800px;
+  width: 1140px;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.topSection .titlepage_btn:hover {
+  background-color: #800000;
+  cursor: pointer;
+}
+
+.instructions_div{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 40%;
+  margin-left: 35%;
+  height: 180px;
+  width: 300px;
+  background-color: #0075B5;
+  position: absolute;
+  color: white;
+}
+
+.titlepage_btn {
+  background-color: #00AEDD;
+  color: black;
+  font-size: 50px;
+  font-weight: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#play_btn {
+  margin-left: 25%;
+  margin-top: 60%;
+}
+
+#instructions_btn {
+  margin-left: 10%;
+  margin-top: 60%;
+}
